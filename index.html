@@ -38,8 +38,8 @@
       }
       docReady();
     </script>
-    <link rel="icon" href="./img/redRing.png" type="image/x-icon" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="./img/circle.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./main.css" />
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark-reasonable.min.css"
@@ -53,7 +53,7 @@
     <header class="header">
         <section class="header-notice">
             <h1>
-                <a href="https://www.npmjs.com/package/keep-random" target="_blank">keep.random</a> is now on &nbsp;<svg viewBox="0 0 780 250"><path fill="#231F20" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path></svg>
+                <a href="https://www.npmjs.com/package/keep-random" target="_blank">keep.random</a> is now available on &nbsp;<svg viewBox="0 0 780 250"><path fill="#231F20" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path></svg> &nbsp!
             </h1>
         </section>
       <div class="container">
@@ -76,12 +76,11 @@
           </h1>
         </div>
         <div class="subtitle-text-container">
-          <div class="subtitle">Random service made simple.</div>
+          <div class="subtitle">Make random service transparent and simple.</div>
           <div class="subtitle-text">
-            keep.random is a random service powered by Keep Network, which you can get random on time without having to trust a third party.
+              Based on Keep Random Beacon, we built Keep.Random for you. This is a powerful tool that you can use to get true randomness in a trustless way and apply them to your products!
             <br/>
             <br/>
-            Transparent and Traceable.
           </div>
           <a
             class="subtitle-read-the-docs"
@@ -95,47 +94,6 @@
       </div>
     </header>
     <main class="main">
-      <section class="why">
-        <div class="container">
-          <h2 class="why-title">
-            Why use it?
-          </h2>
-          <div class="why-para">
-            keep.random makes it easy to get random number everywhere. You don't need to trust any other parties, all random result can be traced on Ethereum.
-          </div>
-
-          <ul class="reason-list">
-            <li class="reason">
-              <i class="reason-icon material-icons">alarm</i>
-              <h3 class="reason-title">
-                Build faster!
-              </h3>
-              <p class="reason-text">
-                Accelerate development. Let keep.random deal with random
-                management so you can focus on what makes your dapp great.
-              </p>
-            </li>
-            <li class="reason">
-              <i class="reason-icon material-icons">send</i>
-              <h3 class="reason-title">
-                Transparent
-              </h3>
-              <p class="reason-text">
-                Relay on Keep random Beacon.
-              </p>
-            </li>
-            <li class="reason">
-              <i class="reason-icon material-icons">favorite_border</i>
-              <h3 class="reason-title">
-                Traceable
-              </h3>
-              <p class="reason-text">
-                All transactions can be traced on Ethereum network.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
       <section class="getting-started">
         <div class="container">
           <h2 class="getting-started-title">
@@ -167,7 +125,11 @@ const randomResult = await keepRandom.sendTx(web3);
           <div class="example-code-item">
             <pre class="pre"><code class="typescript code">
 // get the result
-console.log(randomResult);
+if (randomResult) {
+    console.log(randomResult);
+} else {
+    console.log('failed');
+}
             </code></pre>
           </div>
         </div>
@@ -181,7 +143,7 @@ console.log(randomResult);
               Built by
             </a>
             <a href="https://github.com/laogandie-code/KeepRandom" class="pisa-name">
-              Laogandie
+              laogandie
             </a>
           </div>
         </div>

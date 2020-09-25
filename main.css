@@ -133,7 +133,8 @@ body {
     background: #fff;
     border-width: 0 0 10px;
     border-bottom-style: solid;
-    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    /* border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3; */
+    border-bottom-color: #33A854;
 }
 
 .header-notice h1 {
