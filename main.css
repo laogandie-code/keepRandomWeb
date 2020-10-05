@@ -202,6 +202,17 @@ body {
 .title-dot {
   letter-spacing: -7px;
 }
+
+.donations {
+    background: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+.donations h2 {
+    color: #000;
+    margin: 0 0 40px;
+}
+
 @media (max-width: 900px) {
   .main-title {
     font-size: 52px;
