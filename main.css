@@ -101,9 +101,28 @@ section {
 }
 
 .container {
-  max-width: 970px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
+  text-align: center;
+}
+
+.container code {
+    text-align: left;
+}
+.container .full-demo {
+    width: 290px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+    background: #c12127;
+    border-bottom: solid 5px #fa8717;
+    display: block;
+    box-sizing: 0 10px 30px rgba(0, 0, 0, 0.4);
+    margin: 80px auto 0;
+    cursor: pointer;
 }
 
 html {
@@ -121,7 +140,7 @@ body {
   padding-bottom: 220px;
   background-color: #0a070f;
 
-  background-image: url("./img/banner.png");
+  background-image: url("./img/newbanner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -188,7 +207,7 @@ body {
 
 .main-title {
   font-family: "Roboto Mono", monospace;
-  max-width: 350px;
+  /* max-width: 350px; */
   margin: 130px 0 80px 0;
   font-size: 68px;
   color: white;
@@ -254,7 +273,7 @@ body {
   padding-bottom: 10px;
 }
 .subtitle-text {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
   padding-bottom: 15px;
 }
@@ -276,7 +295,7 @@ body {
     padding-bottom: 40px;
   }
   .subtitle-text {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 15px;
   }
   .subtitle-read-the-docs {
@@ -404,7 +423,7 @@ footer {
 }
 
 .getting-started {
-  background: #0a070f;
+  /* background: #0a070f; */
   padding: 120px 0 50px 0;
 }
 
@@ -412,13 +431,13 @@ footer {
   margin-bottom: 70px;
   font-weight: 700;
   font-size: 28px;
-  color: white;
+  /* color: white; */
   line-height: 38px;
   text-align: center;
 }
 .code-header {
   font-size: 20px;
-  color: white;
+  /* color: white; */
   padding: 0 20px;
   margin-bottom: 30px;
   text-align: center;
